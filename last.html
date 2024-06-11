@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAKA</title>
+    <link rel="icon" type="image/png" href="bisleri.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBogGzD6zxJzj6wNG7BTyjwQvYdI6w5P8kFgzH5L5C5vE3i6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ZP6I7tPxHfzC1FGP3Q8r/FLU8JtDY5+3W8dNOZQ4qY5b8ANPBXsM9x01dYRV2QVR"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function toggleNavbar() {
+        var navbarCollapse = document.getElementById("navbarCollapse");
+        if (navbarCollapse) {
+          navbarCollapse.classList.toggle("show");
+        }
+      }
+
+      function handleYesClick() {
+        // Show all images
+        var images = document.querySelectorAll(".chat-img");
+        images.forEach(function (image) {
+          image.style.display = "block";
+        });
+      }
+
+      function handleNoClick() {
+        // Hide all images
+        var images = document.querySelectorAll(".chat-img");
+        images.forEach(function (image) {
+          image.style.display = "none";
+        });
+      }
+    </script>
+    <script>
+      // Function to hide all images
+      function hideAllImages() {
+        var images = document.querySelectorAll(".chat-img");
+        images.forEach(function (image) {
+          image.style.display = "none";
+        });
+      }
+
+      // Call hideAllImages function when the page loads
+      window.onload = hideAllImages;
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "KVSjz56Ry_wPxpa1c",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="toggleNavbar()"
+          >
+            ☰ Click after reading
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white active" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white" href="emoji.html"
+                >Emoji's message 😄</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white active" href="chatgpt.html"
+                >Chatgpt has got something to say😁</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white" href="last.html"
+                >I gotta SAY something...</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="count-days">
+      <div class="image-overlay">
+        <img class="heart-img" src="bday-h.jpg" alt="" />
+        <div align="center" class="overlay-text-1">
+          <b>THE WORLD JUST GOT LUCKIER SINCE</b>
+        </div>
+
+        <div class="overlay-text">
+          <center>
+            <br />7671 DAYS (or) <br />
+            1095 WEEKS AND 6 DAYS (or) <br />
+            <!-- 7671 DAYS <br /> -->
+            184,104 HOURS (or)<br />
+            11,046,240 MINUTES (or) <br />
+            662,774,400 SECONDS <b r />
+          </center>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="song">
+      <div class="h2">
+        <h2 align="center">The lyrics which I feel is made for you</h2>
+      </div>
+      <div class="s1">
+        <img src="song1.jpg" alt="" />
+        <p align="center">"I FOUND A WOMAN, STRONGER THAN ANYONE I KNOW"</p>
+        <p>PERFECT<br />~Ed Sheeran</p>
+      </div>
+
+      <div class="s1">
+        <img src="song2.jpg.crdownload" alt="" />
+        <p align="center">
+          "HAI CHAAND MEIN BHI DHAAG PAR NA TUJH MEIN EK BHI.."
+        </p>
+
+        <p>TERE HAWAALE<br />~Arijit Singh</p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="singer">
+      <div align="center">My Favorite Singers:</div>
+      <br />
+      <ol>
+        <li>Pravijna The Cuteass</li>
+        <p>
+          Your cute voice is like an arrow which pierces my
+          <b><u>myocardium</u></b> and leaves my body.. I'm not saying it's
+          injurious(I just saw a new word myocardium).It's so goooooddddd what
+          can i even say 😩😭.....I am a fan of your 🐴 voice... I need more
+          songs🙂🫠
+        </p>
+        <br />
+        <li>Shreya Ghoshal</li>
+        <p>
+          Shreya Ghoshal was my Favorite female singer
+          <b>UNTIL I FOUND YOU....</b> <br />U just over powered her no
+          doubt.....
+        </p>
+      </ol>
+    </div>
+
+    <div class="spoil">
+      <h2 align="center">A lil bit of making you ewwww🎀</h2>
+      <br />
+      <p>
+        🎀🎀🎀you're so pookie wookie blueberry muffin recipe cutie patootie
+        little ratatouille chef cheese cake pie cherry on top whipped cream
+        chocolate frosting with sprinkles and vanilla sugar toe curling, blood
+        boiling chocolate ganache cake strawberry cream morning coffee with
+        creamer, snookie, dookie, wookie with creamer, snookie, dookie, wookie,
+        pookie gumdrop snickerdookie honey bunches of oats pumpkin pie toaster
+        strudel blueberry cheese cake muffin berry topped with peanut butter
+        jelly jam sprinkles and blue raspberry crumbs with a side of Vanilla ice
+        tea with extra sugar and ganache sprinkled.🎀🎀🎀
+      </p>
+      </div>
+      <!-- voice -->
+       <div class="bye">
+
+         <p align="center">Oldieee!!! Just Remember</p>
+        <video src="bye.mp4" controls></video>
+
+       </div>
+  </body>
+</html>

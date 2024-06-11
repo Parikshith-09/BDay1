@@ -1,0 +1,213 @@
+.start-card {
+  width: 310px;
+  margin: 20px;
+}
+.card-img-top {
+  height: 400px;
+  width: 100%;
+}
+button {
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .start-card {
+    width: 90%;
+  }
+  .card-img-top {
+    height: auto;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .start-card {
+    width: 100%;
+  }
+  .card-img-top {
+    height: auto;
+  }
+  button {
+    width: 100%;
+  }
+}
+
+
+/*  */
+@media (max-width: 768px) {
+  .emoji-card {
+    width: 80%;
+    /* Set width to 100% on smaller screens */
+    border: 1px solid;
+    margin-top: 30px;
+    background-color: rgb(148, 234, 234);
+  }
+  .btn {
+    /* margin-top: 10px; */
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .card-text {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  /* .card-img-top{
+  } */
+}
+
+.active {
+  background-color: bisque;
+}
+
+/* for chatgpt */
+@media (max-width: 768px) {
+  .chat-img {
+    /* border: 1px solid; */
+    width: 400px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #liveAlertPlaceholder {
+    /* border: 1px solid; */
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 10px;
+  }
+
+  #liveAlertBtn {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .chat-yes {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 100px;
+    background-color: rgb(63, 225, 63);
+  }
+  .chat-no {
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 100px;
+    margin-right: 30px;
+    background-color: rgb(230, 92, 92);
+  }
+}
+
+/* #liveAlertBtn {
+  margin-top: 10px;
+margin-right: 10px;
+} */
+
+@media (max-width: 768px) {
+  .count-days {
+    position: relative;
+  }
+
+  .image-overlay {
+    position: relative;
+    border: 1px solid;
+    margin: 10px 6px;
+  }
+
+  .heart-img {
+    width: 100%;
+    display: block;
+    margin-right: 10px;
+    height: 800px;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max-content;
+    margin-left: 35px;
+    height: 250px;
+    transform: translate(-60%, -50%);
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(101, 101, 101, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .overlay-text-1 {
+    position: absolute;
+    top: 19%;
+    margin-left: 40px;
+  }
+}
+/*  */
+@media (max-width: 768px) {
+  .song img {
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    margin-bottom: 10px; 
+  }
+
+  .song{
+    margin:0 10px ;
+    margin-top: 100px;
+    border: 1px;
+    background-color: rgb(188, 242, 242);
+  }
+  .h2{
+    margin-bottom: 15px;
+    background-color: rgb(238, 232, 232);
+    /* color: rgb(249, 44, 44); */
+    text-decoration: double;
+  }
+  .s1{
+    margin: 10px;
+    border: 2px dashed;
+    border-radius: 5px;
+
+  }
+}
+
+/*  */
+@media (max-width:768px){
+  .singer{
+    background-color: rgb(194, 193, 193);
+    width:auto;
+    height: auto;
+    margin: 40px 10px;
+    /* margin-right: px; */
+    
+  }
+  .singer li{
+    font-weight: 999;
+  }
+  .spoil{
+    margin: 10px;
+    width: auto;
+    height: auto;
+    background-color: bisque;
+  }
+  .spoil p{
+    font-size: 18px;
+  }
+  .bye{
+
+    margin: 50px 10px;
+  }
+  .bye p{
+    font-size: 20px;
+  }
+  .bye video{
+    width: 400px;
+    height: auto;
+  }
+}
+
+

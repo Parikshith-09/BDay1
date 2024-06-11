@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAKA</title>
+    <link rel="icon" type="image/png" href="bisleri.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz4fnFO9gybBogGzD6zxJzj6wNG7BTyjwQvYdI6w5P8kFgzH5L5C5vE3i6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ZP6I7tPxHfzC1FGP3Q8r/FLU8JtDY5+3W8dNOZQ4qY5b8ANPBXsM9x01dYRV2QVR"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      function toggleNavbar() {
+        var navbarCollapse = document.getElementById("navbarCollapse");
+        if (navbarCollapse) {
+          navbarCollapse.classList.toggle("show");
+        }
+      }
+
+      // Set up your email service provider's credentials
+      /*const serviceId = 'service_lwuef0a';*/
+      const serviceId = "service_lwuef0a";
+      const templateId = "template_sh006we";
+      const userId = "your_user_id";
+
+      // Set up the email parameters
+      const params = {
+        to_name: "Gagan",
+        from_name: "Pravi",
+        message: "",
+      };
+
+      // Function to send the email
+      function sendEmail(message) {
+        params.message = message;
+        emailjs
+          .send(serviceId, templateId, params, userId)
+          .then(function (response) {
+            console.log("Email sent successfully:", response);
+            // Display a success message or redirect to a thank you page
+          })
+          .catch(function (error) {
+            console.error("Error sending email:", error);
+            // Display an error message
+          });
+      }
+    </script>
+    <!--  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "KVSjz56Ry_wPxpa1c",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="toggleNavbar()"
+          >
+            ☰ Click after reading
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white active" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white" href="emoji.html"
+                >Emoji's message 😄</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white" href="chatgpt.html">Chatgpt has got something to say😁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-white" href="last.html">I gotta SAY something...</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--  -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Yo Shawtyy!!</strong>&nbsp;Select (Tap) on any one of the options to mark as an answer in every slide....(Pleaaachhh)
+      <!-- <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button> -->
+    </div>
+    <!--  -->
+    <center>
+      <div class="emoji-card" style="width: 18rem">
+        <img src="Poo.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title">Poopy doopy pooo💩</h4>
+          <br />
+          <p class="card-text">
+            Hey My Pookie Poopy🎀🎀, Happy Birthday....Go take a big dump on
+            this special occassion😁.... I want you to build me an Apartment, a
+            69 stories one🥹....And stop calling him Poopy💩.... He is not poop,
+            u areeeeee😠
+          </p>
+          <p>
+            <b><u> you gonna call him 💩 again???</u></b>
+            
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Yes Darling😊')"
+            >Yes Darling😊</a
+          >
+          <a href="#" class="btn btn-primary" onclick="sendMail('No😑')"
+            >No😑</a
+          >
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="auber.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title">Huh😏😏😏😏😏😏</h4>
+          <br />
+          <p class="card-text">
+            I know you call me 🤏🍆. I understand(don't). Ukw beats me for being
+            small(When i say beat it doesnt mean 😏...Okay??). He gets so sad...
+            U are mean to him. And also u are mean to meee😑... Call me small
+            when I'm minding my own business. You make cry and make him change
+            trousers. Its very tiresome to wash the trousers. Thanks to you, his
+            Lower back is getting fucked day by day....
+          </p>
+          <p>
+            <b><u>Are you still gonna call him 🤏🍆??</u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Ofc... Who else is gonna call if not me😏')"
+            >Ofc... Who will call it small if not me😏</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Fine.. I wont.. Okay?')"
+            >Fine.. I wont.. Okay?🙄</a
+          >
+        </div>
+      </div>
+      <!-- 3rd -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="smirk.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h4 class="card-title">Some cute Moans....</h4>
+          <br />
+          <p class="card-text">
+            😏😏😏😏😏😏😏😏😏😏😏😏😏 So, 😏..... I have nothing to say, but
+            butt 🍑 i just wanna say 😏.....<br />
+
+            <b>
+              I go moan,<br />
+              I go moan,<br />
+              Go away,<br />away.. <br /></b
+            >(Only if u know the reference) <br />And moreover if he uses 😏...
+            It doesn't mean he is moaning... He might be making fun of ur 🤏tiny
+            legs 🍗
+          </p>
+          <p>
+            <b><u>What do you want him if he uses 😏 again??? </u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Let him Moan more😊')"
+            >Let him Moan more😊</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Stop him and ask him to get help!!🧯')"
+            >Stop him and ask him to get help!!🧯</a
+          >
+        </div>
+      </div>
+      <!-- 4th -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="sob.jpeg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <br />
+          <h4 class="card-title">Crying until you stop annoying😭😭</h4>
+          <br />
+          <p class="card-text">
+            Poor guy, he and his always cries when you roast him or his bro....
+            U meanie🐟, ಸ್ವಲ್ಪ ನು ಕರುಣೆ ಇಲ್ವಾ??? Chey, What do u even get by
+            doing that??Happiness?? Fun??<br />
+            U know what he gets???<br />A wet Trouser...Thanks to his bro(he
+            cried in the 2nd slide itself)
+          </p>
+          <p>
+            <b><u>So no more Roasting and making him and his bro cry??</u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('😏 Imma roast both of em More and its gonna be more brutal👺')"
+            >😏 Imma roast both of em More and its gonna be more brutal👺</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('I wont bother them Okay?🙄Huhh')"
+            >I wont bother them Okay?🙄Huhh</a
+          >
+        </div>
+      </div>
+      <!-- 5th -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="middle.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <br />
+          <h4 class="card-title">Just one is not enough!😏</h4>
+          <br />
+          <p class="card-text">
+            Poor me, I would be used very rarely just like you eating 3 meals a
+            day..... But now you 2 use me regularly just like how you skip your
+            meals.... I have a reputation man.... Respect ಕೊಡಿ.... Yen ivella...
+            <br />
+            ಒಬ್ಬ irritate ಆದ್ರೆ use ಮಾಡ್ತನೆ <br />
+            ನೀನು ಬರಿ ಒಂದೆನಾ antha ಕೇಳ್ತ್ಯಾ <br />
+            What the hell should i even do 😭.... <br />
+          </p>
+          <p>
+            <b><u>What would be ur reply for 🖕?? </u></b>
+          </p>
+          <a href="#" class="btn btn-primary" onclick="sendMail('💍')"
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;💍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('One Not Enough.....🖕🖕🖕')"
+            >One Not Enough.....🖕🖕🖕</a
+          >
+        </div>
+      </div>
+      <!-- 6th -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="heart.gif" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <br />
+          <h4 class="card-title">An Emoji only for you!🤌</h4>
+          <br />
+          <p class="card-text">
+            <b>"You so cuteeeeeeee"</b><br />
+            You might be bored listening to this everyday.... But when he calls
+            you cutee, he means it from his heart. He means that you are shawt
+            🤏, yes a tiny gal..... <br />The gal with <br />ಪುಟ್ಟ ಪುಟ್ಟ ಕೈ
+            <br />ಪುಟ್ಟ ಪುಟ್ಟ ಕಾಲು... <br />And he thinks its cuteee... Dumbshit
+            considers everything you do as cute. I don't know how?? Nvm, its
+            left to that Dumbass cake man....
+          </p>
+          <p>
+            <b><u>What does this 🫶 actually mean? </u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Cute tiny gal!!🫶')"
+            >Cute tiny gal!!🫶</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Small tiny gal!!🫶')"
+            >Small tiny gal!!🫶</a
+          >
+          <a href="#" class="btn btn-primary" onclick="sendMail('Both??🫶')"
+            >Both??🫶</a
+          >
+        </div>
+      </div>
+      <!-- 7th -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="trap.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <br />
+          <h4 class="card-title">A Trap!!🆘</h4>
+          <br />
+          <p class="card-text">
+            <b>Yeshhh it's a Trap</b><br />
+            Poor guy falls for this everytime....Huh, but who cares...He does
+            whatever u say when u use this Life Threatening emoji <br />
+            Those big eyes (unlike yours) are so cuteee(not as much as you) that
+            he instantly falls for the trap. <br />
+            Huh, you are doing a good job <b><u>168.5 cms </u></b> lady. Nice
+            way to ask him do weird things or make him accept weird bullshits
+            about him. Intelligent!!
+          </p>
+          <p>
+            <b><u>You want him to still fall for this amazing trap??? </u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('This emoji.. I mean the Trap is specially crafted for him😊')"
+            >This emoji.. I mean the Trap is specially crafted for him😊</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('Umm No!! Let him Live him in peace😌')"
+            >Umm No!! Let him live in peace😌</a
+          >
+        </div>
+      </div>
+      <!-- 8th -->
+      <div class="emoji-card" style="width: 18rem">
+        <img src="smile.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <br />
+          <h4 class="card-title">A Devil in his life👹</h4>
+          <br />
+          <p class="card-text">
+            <b>How scary is this emoji??? <br>BB : Yes</b><br /><br>
+           Its very sed that he is scared of me... A fckin smiling emoji 😆... Me and you literally take his smile away and make him scared as fuck... And its the only to stop him from annoying or one of the ways to annoy him... We slay young woman💅... One emoji is all it takes (unlike one 🖕)
+          </p>
+          <p>
+            <b><u>Do you want me to take away his fear of me (😊)??? </u></b>
+          </p>
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('I want to annoy him more... That mean ass cake deserves to be annoyed more😠')"
+            >I want to annoy him more... That mean ass cake deserves to be annoyed more😠</a
+          >
+          <a
+            href="#"
+            class="btn btn-primary"
+            onclick="sendMail('STFU and read the first point...😊')"
+            >STFU and read the first point...😊</a
+            >
+        </div>
+      </div>
+    </center>
+  </body>
+</html>
